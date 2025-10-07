@@ -1,4 +1,25 @@
+'''import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+from sklearn.linear_model import LinearRegression, Lasso
 
+advertise_data = pd.read_csv("D:\\advertising.csv")
+plt.rcParams["font.family"] = ["SimHei"]
+
+x = advertise_data[['TV']]
+y = advertise_data['Sales']
+
+line_model = LinearRegression()
+line_model.fit(x, y)
+
+plt.figure(figsize=(8, 6))
+plt.scatter(x, y, label='实际值')
+plt.xlabel('TV')
+plt.ylabel('Sales')
+plt.plot(x, line_model.predict(x), color = 'r', label='拟合曲线')
+plt.legend()
+plt.grid(alpha=0.3)
+plt.show()'''
 
 '''import numpy as np
 import pandas as pd
@@ -234,6 +255,7 @@ plt.show()
 
 stat, p = shapiro(g_errors)
 print(stat, p)'''
+
 
 
 
